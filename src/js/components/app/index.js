@@ -72,7 +72,7 @@ const APP = {
                 $(this.element).addClass('active');
             },
 
-            offset: '70%'
+            offset: '85%'
         });
 
         let intergationDiv = new Waypoint({
@@ -81,7 +81,7 @@ const APP = {
                 $(this.element).addClass('active');
             },
 
-            offset: '40%'
+            offset: '50%'
         })
 
 

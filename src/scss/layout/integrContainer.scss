@@ -21,7 +21,7 @@
 .integr-container__inner{
     width: 1366px;
     margin: 0 auto;
-    padding: 100px 100px 150px 100px;
+    padding: 0 100px 150px 100px;
 }
 
 .integr-container__title{
@@ -41,14 +41,21 @@
 
     li{
         opacity: 0;
-
     }
 
-    @for $i from 1 to 5 {
-        li:nth-of-type(#{$i}){
-            transition: all ease-out .2s #{$i/3 + 's'};
-        }
+    li:nth-of-type(1){
+        transition: all ease-out 1s .5s;
     }
+    li:nth-of-type(2){
+        transition: all ease-out 1s .6s;
+    }
+    li:nth-of-type(3){
+        transition: all ease-out 1s .8s;
+    }
+    li:nth-of-type(4){
+        transition: all ease-out 1s 1s;
+    }
+
 }
 
 .integr-container.active .integr-list{
