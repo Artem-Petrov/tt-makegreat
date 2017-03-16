@@ -1,12 +1,29 @@
 .works-container{
+    position: relative;
+    z-index: 1;
     min-width: 1366px;
     background-color: #F6F9FC;
+    overflow: hidden;
+
+    &:before{
+        content: '';
+        position: absolute;
+        z-index: 5;
+        bottom:-140px;
+        left:-10%;
+        width: 120%;
+        height: 200px;
+        background-color: #fff;
+        transform: rotateZ(3deg);
+    }
 }
 
 .works-container__inner{
+    position: relative;
+    z-index: 7;
     width: 1366px;
     margin: 0 auto;
-    padding: 0 100px 100px 100px;
+    padding: 0 100px 20px 100px;
     text-align: center;
 }
 
