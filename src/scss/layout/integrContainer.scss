@@ -1,0 +1,87 @@
+.integr-container{
+    position: relative;
+    z-index: 1;
+    min-width: 1366px;
+    background-color: #fff;
+    overflow: hidden;
+
+    &:before{
+        content: '';
+        position: absolute;
+        z-index: 5;
+        bottom:-140px;
+        left:-10%;
+        width: 120%;
+        height: 200px;
+        background-color: #121D41;
+        transform: rotateZ(3deg);
+    }
+}
+
+.integr-container__inner{
+    width: 1366px;
+    margin: 0 auto;
+    padding: 100px 100px 150px 100px;
+}
+
+.integr-container__title{
+    margin: 50px 0;
+    font-size: 40px;
+    font-weight: 300;
+    color: #2A99FF;
+}
+
+.integr-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+        opacity: 0;
+
+    }
+
+    @for $i from 1 to 5 {
+        li:nth-of-type(#{$i}){
+            transition: all ease-out .2s #{$i/3 + 's'};
+        }
+    }
+}
+
+.integr-container.active .integr-list{
+
+     li{
+         opacity: 1;
+     }
+}
+
+.integr-step__item{
+    display: block;
+    width: 270px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #F0F0F0;
+    color:$color-default;
+    text-decoration: none;
+}
+
+.integr-step__title{
+    margin: 40px 0 10px 0;
+    font-size: 14px;
+    color: #2AA2FF;
+}
+
+.integr-step__text{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.integr-step__url{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #9BA4B3;
+}

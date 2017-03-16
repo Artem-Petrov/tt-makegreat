@@ -1,0 +1,78 @@
+.top-container{
+    position: relative;
+    z-index: 1;
+    min-width: 1366px;
+    padding-top: 80px;
+    background: linear-gradient(270deg, #3FBCEF 0%, #3B77F5 100%);
+    overflow: hidden;
+
+    &:after{
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: url("../img/topography-transparent.png") ;
+    }
+
+    &:before{
+        content: '';
+        position: absolute;
+        z-index: 5;
+        bottom:-100px;
+        left:-10%;
+        width: 120%;
+        height: 250px;
+        background-color: #fff;
+        transform: rotateZ(4deg);
+    }
+}
+
+.top-container__inner{
+    position: relative;
+    z-index: 6;
+    width: 1366px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 0 50px;
+    color:#fff;
+}
+
+.top-container__left{
+    width: 460px;
+    padding: 120px 0 0 50px;
+}
+
+.top-container__title {
+    margin: 0 0 25px 0;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.top-container__text{
+    margin-bottom: 40px;
+    width: 285px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+//---------------------container phone
+.top-container__phone{
+    position: absolute;
+    z-index: 10;
+    top: 70px;
+    right: 255px;
+    width: 276px;
+    height: 555px;
+    background: url("../img/phone.png") center no-repeat;
+    background-size: 276px 555px;
+    padding: 60px 10px 10px 20px;
+}
+
+.video-container{
+    width: 234px;
+    height: 417px;
+}

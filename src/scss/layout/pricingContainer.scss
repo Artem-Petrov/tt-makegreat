@@ -1,0 +1,39 @@
+.pricing-container{
+    min-width: 1366px;
+    background-color: #F6F9FC;
+    border-bottom: 1px solid #E4ECF3;
+}
+
+.pricing-container__inner{
+    width: 1366px;
+    margin: 0 auto;
+    padding: 0 100px 100px 100px;
+}
+
+
+.pricing-container__title {
+    margin: 0 0 20px 0;
+    font-size: 40px;
+    font-weight: 300;
+    color: #2A99FF;
+}
+
+.pricing-container__text{
+    font-size: 17px;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.pricing-container__start-title{
+    margin: 25px 0;
+    font-size: 24px;
+    font-weight: 300;
+    color: #373352;
+}
+
+.pricing-container__link{
+
+    .btn{
+        margin-right: 20px;
+    }
+}

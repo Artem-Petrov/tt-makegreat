@@ -1,0 +1,134 @@
+.works-container{
+    min-width: 1366px;
+    background-color: #F6F9FC;
+}
+
+.works-container__inner{
+    width: 1366px;
+    margin: 0 auto;
+    padding: 0 100px 100px 100px;
+    text-align: center;
+}
+
+.works-container__logo{
+    position: relative;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 10px auto;
+    background-color: #fff;
+    border-radius: 70px;
+
+    img{
+        position:absolute;
+        z-index: 1;
+
+    }
+
+    .img-gear1{
+        top:23px;
+        left:12px;
+        z-index: 2;
+        animation:  rotating linear 3s infinite;
+    }
+
+    .img-gear2{
+        top:16px;
+        left:33px;
+        animation:  rotatingInvert linear 3s infinite;
+    }
+}
+
+//---------animation
+@keyframes rotating {
+    0%   { transform: rotateZ(0deg); }
+    100%   { transform: rotateZ(360deg); }
+}
+
+@keyframes rotatingInvert {
+    0%   { transform: rotateZ(0deg); }
+    100%   { transform: rotateZ(-360deg); }
+}
+//---------
+
+.works-container__title{
+    margin: 20px 0;
+    font-size: 40px;
+    font-weight: 300;
+    color: #2A99FF;
+}
+
+.works-container__text{
+    width: 570px;
+    margin: 10px auto 30px auto;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.works-tabs__inner{
+    display: flex;
+    justify-content: space-between;
+    width: 970px;
+}
+
+.works-tabs__content{
+    width: 770px;
+    height: 380px;
+    overflow: hidden;
+}
+
+.works-tabs__content-item{
+    display: none;
+
+    &.is-active{
+        display: block;
+    }
+
+    img{
+        width: 770px;
+    }
+}
+
+.works-tabs__controls{
+    width: 170px;
+    text-align: left;
+}
+
+.works-tabs__controls-item{
+    display: block;
+    margin-bottom: 10px;
+    width: 190px;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 34px;
+    color: #2AA2FF;
+    text-decoration: none;
+
+    &.is-active,
+    &:hover{
+        background-color: #fff;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+        border-radius: 3px;
+        color: $color-default;
+
+        .works-tabs__controls-order{
+            background-color: $color-default;
+            color:#fff;
+        }
+    }
+}
+
+.works-tabs__controls-order{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.works-tabs__controls-name{
+    display: inline-block;
+}

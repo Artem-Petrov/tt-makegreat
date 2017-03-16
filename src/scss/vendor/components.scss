@@ -1,0 +1,53 @@
+//-------------hidden
+.hidden{
+    display: none;
+}
+//-----------------float align
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+//-------------------------
+//---style link
+//-------------------------
+
+//------------------------buttons
+.btn{
+    display: inline-block;
+    padding: 0 15px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 4px 6px 0 rgba(0,0,0,0.07);
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all ease-out .2s;
+}
+
+.btn-blue{
+    background-color: #2AA2FF;
+    color:#fff;
+
+    &:hover{
+        background-color: #128AE7;
+    }
+}
+
+.btn-white{
+    background-color: #fff;
+    color: #2AA2FF;
+
+    &:hover{
+        background-color: #F6F9FC;
+    }
+}
+
+//-------------------------list
+.default-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

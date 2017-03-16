@@ -1,0 +1,216 @@
+﻿doctype html
+html(lang='')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+        title TT Make Great
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        link(rel='stylesheet', href='css/index.css')
+        style(type="text/css").
+            #preloader {
+                position: fixed;
+                z-index: 9999;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background: #fff;
+            }
+    body
+        #preloader
+        #wrapper
+            header
+                .header-inner
+                    .header-logo MAKE GREAT
+                        span .ai
+                    ul.nav
+                        li
+                            a.nav-link(href="#features").js-anchor Features
+                        li
+                            a.nav-link(href="#works").js-anchor  How it works
+                        li
+                            a.nav-link(href="#pricing").js-anchor  Pricing
+                        li
+                            a.nav-link(href="#") Documentation
+                    .header-auth
+                        a.header__auth-signin(href="#") Sign in
+                        a.header__auth-signup(href="#") SIGN UP
+            .top-container
+                .top-container__inner
+                    .top-container__left
+                        h1.top-container__title Incredible tools for making your bot great
+                        .top-container__text
+                            | Visually build, train & deploy bots
+                            | to do just about anything.
+                        a.btn.btn-blue(href="#") start now for free
+                    .top-container__right
+                        .top-container__phone
+                            .video-container
+                                video(src="content/video/chat_with_bot.mov" width="234" height="417" autoplay loop)
+            #features.steps-container.js-waypoint
+                .steps-container__inner
+                    ul.steps-list.default-list
+                        li
+                          .steps__item
+                              .steps__item-icon
+                                  img(src="img/svg/i-features-1.svg" alt="")
+                              h4.steps__item-title Manual testing
+                              .steps__item-text
+                                  | Whether you’re a big publisher or
+                                  | a small agency, our suite of tools can
+                                  | make your audience’s chatbot experience rich and frictionless.
+                        li
+                            .steps__item
+                                .steps__item-icon
+                                    img(src="img/svg/i-features-2.svg" alt="")
+                                h4.steps__item-title Browser notifications
+                                .steps__item-text
+                                    | Keeps connection with browser through WebSockets or long pooling.
+                                    | Allows server to immediately notify user. Used in conversations windows f
+                                    | or sending bot responses to browser.
+                        li
+                            .steps__item
+                                .steps__item-icon
+                                    img(src="img/svg/i-features-3.svg" alt="")
+                                h4.steps__item-title Billing
+                                .steps__item-text
+                                    | When customer creates task we reserve some amount on his credit
+                                    | card (put on hold). When task finished we
+                                    | will charge him for exact amount.
+            #works.works-container
+                .works-container__inner
+                    .works-container__logo
+                        img(src="img/svg/i-gear-1.svg", alt="").img-gear1
+                        img(src="img/svg/i-gear-2.svg", alt="").img-gear2
+                    h4.works-container__title How it works
+                    .works-container__text
+                        | We believe that payments is a problem rooted in code, not finance. We obsessively
+                        | seek out elegant, composable abstractions that enable robust, scalable, flexible integrations.
+                    .works-tabs
+                        .works-tabs__inner
+                            .works-tabs__content
+                                #tab-1.works-tabs__content-item.is-active
+                                    img(src="img/code-1.png" alt="code")
+                                #tab-2.works-tabs__content-item
+                                    img(src="img/code-2.png" alt="code")
+                                #tab-3.works-tabs__content-item
+                                    img(src="img/code-3.png" alt="code")
+                            .works-tabs__controls
+                                a(href="#tab-1").works-tabs__controls-item.is-active
+                                    .works-tabs__controls-order 1
+                                    .works-tabs__controls-name Configure bot
+                                a(href="#tab-2").works-tabs__controls-item
+                                    .works-tabs__controls-order 2
+                                    .works-tabs__controls-name Create task
+                                a(href="#tab-3").works-tabs__controls-item
+                                    .works-tabs__controls-order 3
+                                    .works-tabs__controls-name Analyze results
+            .integr-container.js-waypoint
+                .integr-container__inner
+                        h4.integr-container__title Integrations
+                        ul.integr-list
+                            li
+                                a(href="#").integr-step__item
+                                    .integr-step__img
+                                        img(src="img/logo/logo-microsoft.svg", alt="")
+                                    .integr-step__title Microsoft bot framework
+                                    .integr-step__text
+                                        | Build an intelligent chatbot for teams.
+                                        | Launch immediately with our one click integration
+                                        | or host it on your own server.
+                                    .integr-step__url dev.botframework.com
+                            li
+                                a(href="#").integr-step__item
+                                    .integr-step__img
+                                        img(src="img/logo/logo-api.svg", alt="")
+                                    .integr-step__title Api
+                                    .integr-step__text
+                                        | Design Conversation Actions for the Google Assistant.
+                                        | Then, easily deploy them on Google Home as “Conversation Actions.”
+                                    .integr-step__url api.ai
+                            li
+                                a(href="#").integr-step__item
+                                    .integr-step__img
+                                        img(src="img/logo/logo-wit.svg", alt="")
+                                    .integr-step__title Wit
+                                    .integr-step__text
+                                        | Build a conversational bot for Facebook users. D
+                                        | eploy with our one-click integration or host it on your own server.
+                                    .integr-step__url wit.ai
+                            li
+                                a(href="#").integr-step__item
+                                    .integr-step__img
+                                        img(src="img/logo/logo-smooch.svg", alt="")
+                                    .integr-step__title Smooch
+                                    .integr-step__text
+                                        | Build an intelligent chatbot for teams. Launch immediately with our
+                                        | one click integration or host it on your own server.
+                                    .integr-step__url smooch.io
+                        a(href="#").btn.btn-blue all integrations
+            .devs-container
+                .devs-container__inner
+                    h4.devs-container__title Developers first
+                    .devs-container__text
+                        | Avoid the steep learning curve and quickly add B2C messaging to your app by
+                        | combining our simple API modules built for scale and high-availability.
+                    .devs-container__img-wrap
+                        img(src="img/developers-first.png", alt="" width="1013" height="1097")
+            #pricing.pricing-container
+                .pricing-container__inner
+                    h4.pricing-container__title Pricing
+                    .pricing-container__text
+                        | You defining the rewards for testers only. We keep things simple — there’s no coding required, <br />
+                        | and you can build a bot without cost getting in the way.
+                    .pricing-container__start
+                        h4.pricing-container__start-title Let's get started!
+                        .pricing-container__link
+                            a(href="#").btn.btn-blue create account
+                            a(href="#").btn.btn-white contact us
+            footer
+                .footer-inner
+                    .footer-logo
+                        a(href="#").footer-logo__link MAKE GREAT
+                            span .ai
+                    .footer__menu
+                        .footer__menu__item
+                            h4.footer__menu-title product
+                            ul.footer__menu-list
+                                li
+                                    a(href="#features").footer__menu-link.js-anchor  Features
+                                li
+                                    a(href="#works").footer__menu-link.js-anchor  How it works
+                                li
+                                    a(href="#pricing").footer__menu-link.js-anchor  Pricing
+                                li
+                                    a(href="#").footer__menu-link Contact sales
+                        .footer__menu__item
+                            h4.footer__menu-title developers
+                            ul.footer__menu-list
+                                li
+                                    a(href="#").footer__menu-link Documentaion
+                                li
+                                    a(href="#").footer__menu-link Quick start
+                                li
+                                    a(href="#").footer__menu-link API reference
+                        .footer__menu__item
+                            h4.footer__menu-title company
+                            ul.footer__menu-list
+                                li
+                                    a(href="#").footer__menu-link About
+                                li
+                                    a(href="#").footer__menu-link Jobs
+                                li
+                                    a(href="#").footer__menu-link Become a partner
+                    .footer__social
+                        ul.social-list
+                            li
+                                a(href="#").social-icon.fa.fa-twitter.fa-2x
+                            li
+                                a(href="#").social-icon.fa.fa-github.fa-2x
+                            li
+                                a(href="#").social-icon.fa.fa-facebook-official.fa-2x
+        script(src='js/vendor/jquery-3.1.0.min.js')
+        script(src='js/vendor/jquery.waypoints.min.js')
+        script(src='js/index.js')
