@@ -149,17 +149,6 @@ dfn {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-    font: 500 28px/1.2 'marmelad', sans-serif;
-    margin: 5px 0 20px 0;
-    @media (min-width: $screen-w--sx){
-        font: 500 36px/1.4 'marmelad', sans-serif;
-        margin: 53px 0 30px 0;
-    }
-    @media (min-width: $screen-w--xl){
-        margin-top: 35px;
-    }
-}
 
 /**
  * Add the correct background and color in IE 9-.

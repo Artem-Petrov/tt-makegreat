@@ -84,7 +84,14 @@ html(lang='')
                     .works-container__logo
                         img(src="img/svg/i-gear-1.svg", alt="").img-gear1
                         img(src="img/svg/i-gear-2.svg", alt="").img-gear2
-                    h4.works-container__title How it works
+                    h4.works-container__title
+                        svg(height='60', width='250')
+                            defs
+                                lineargradient#grad(x1='0%', y1='0%', x2='100%', y2='0%')
+                                    stop(offset='5%', style='stop-color:rgb(58,119,245);stop-opacity:1')
+                                    stop(offset='95%', style='stop-color:rgb(63,189,240);stop-opacity:1')
+                            text(fill='url(#grad)', font-family='Open Sans', x='2', y='50')
+                                | How it works
                     .works-container__text
                         | We believe that payments is a problem rooted in code, not finance. We obsessively
                         | seek out elegant, composable abstractions that enable robust, scalable, flexible integrations.
@@ -109,7 +116,10 @@ html(lang='')
                                     .works-tabs__controls-name Analyze results
             .integr-container.js-waypoint
                 .integr-container__inner
-                        h4.integr-container__title Integrations
+                        h4.integr-container__title
+                            svg(height='60', width='260')
+                                text(fill='url(#grad)', font-family='Open Sans', x='2', y='50')
+                                    | Integrations
                         ul.integr-list
                             li
                                 a(href="#").integr-step__item
@@ -151,7 +161,10 @@ html(lang='')
                         a(href="#").btn.btn-blue all integrations
             .devs-container
                 .devs-container__inner
-                    h4.devs-container__title Developers first
+                    h4.devs-container__title
+                        svg(height='60', width='300')
+                            text(fill='url(#grad)', font-family='Open Sans', x='2', y='50')
+                                | Developers first
                     .devs-container__text
                         | Avoid the steep learning curve and quickly add B2C messaging to your app by
                         | combining our simple API modules built for scale and high-availability.
@@ -159,7 +172,10 @@ html(lang='')
                         img(src="img/developers-first.png", alt="" width="1013" height="1097")
             #pricing.pricing-container
                 .pricing-container__inner
-                    h4.pricing-container__title Pricing
+                    h4.pricing-container__title
+                        svg(height='60', width='300')
+                            text(fill='url(#grad)', font-family='Open Sans', x='2', y='50')
+                                | Pricing
                     .pricing-container__text
                         | You defining the rewards for testers only. We keep things simple — there’s no coding required, <br />
                         | and you can build a bot without cost getting in the way.
