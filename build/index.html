@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>TT Make Great</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+        <style type="text/css">
+            #preloader {
+                position: fixed;
+                z-index: 9999;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="preloader"></div>
+        <div id="wrapper">
+            <header>
+                <div class="header-inner">
+                    <div class="header-logo">MAKE GREAT<span>.ai</span></div>
+                    <ul class="nav">
+                        <li><a class="nav-link js-anchor" href="#features">Features</a></li>
+                        <li><a class="nav-link js-anchor" href="#works"> How it works</a></li>
+                        <li><a class="nav-link js-anchor" href="#pricing"> Pricing</a></li>
+                        <li><a class="nav-link" href="#">Documentation</a></li>
+                    </ul>
+                    <div class="header-auth"><a class="header__auth-signin" href="#">Sign in</a><a class="header__auth-signup" href="#">SIGN UP</a></div>
+                </div>
+            </header>
+            <div class="top-container">
+                <div class="top-container__inner">
+                    <div class="top-container__left">
+                        <h1 class="top-container__title">Incredible tools for making your bot great</h1>
+                        <div class="top-container__text">
+                            Visually build, train & deploy bots
+                            to do just about anything.
+                        </div><a class="btn btn-blue" href="#">start now for free</a>
+                    </div>
+                    <div class="top-container__right">
+                        <div class="top-container__phone">
+                            <div class="video-container">
+                                <video src="content/video/chat_with_bot.mov" width="234" height="417" autoplay loop></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="steps-container js-waypoint" id="features">
+                <div class="steps-container__inner">
+                    <ul class="steps-list default-list">
+                        <li>
+                            <div class="steps__item">
+                                <div class="steps__item-icon"><img src="img/svg/i-features-1.svg" alt=""></div>
+                                <h4 class="steps__item-title">Manual testing</h4>
+                                <div class="steps__item-text">
+                                    Whether you’re a big publisher or
+                                    a small agency, our suite of tools can
+                                    make your audience’s chatbot experience rich and frictionless.
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="steps__item">
+                                <div class="steps__item-icon"><img src="img/svg/i-features-2.svg" alt=""></div>
+                                <h4 class="steps__item-title">Browser notifications</h4>
+                                <div class="steps__item-text">
+                                    Keeps connection with browser through WebSockets or long pooling.
+                                    Allows server to immediately notify user. Used in conversations windows f
+                                    or sending bot responses to browser.
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="steps__item">
+                                <div class="steps__item-icon"><img src="img/svg/i-features-3.svg" alt=""></div>
+                                <h4 class="steps__item-title">Billing</h4>
+                                <div class="steps__item-text">
+                                    When customer creates task we reserve some amount on his credit
+                                    card (put on hold). When task finished we
+                                    will charge him for exact amount.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="works-container" id="works">
+                <div class="works-container__inner">
+                    <div class="works-container__logo"><img class="img-gear1" src="img/svg/i-gear-1.svg" alt=""><img class="img-gear2" src="img/svg/i-gear-2.svg" alt=""></div>
+                    <h4 class="works-container__title">How it works</h4>
+                    <div class="works-container__text">
+                        We believe that payments is a problem rooted in code, not finance. We obsessively
+                        seek out elegant, composable abstractions that enable robust, scalable, flexible integrations.
+                    </div>
+                    <div class="works-tabs">
+                        <div class="works-tabs__inner">
+                            <div class="works-tabs__content">
+                                <div class="works-tabs__content-item is-active" id="tab-1"><img src="img/code-1.png" alt="code"></div>
+                                <div class="works-tabs__content-item" id="tab-2"><img src="img/code-2.png" alt="code"></div>
+                                <div class="works-tabs__content-item" id="tab-3"><img src="img/code-3.png" alt="code"></div>
+                            </div>
+                            <div class="works-tabs__controls"><a class="works-tabs__controls-item is-active" href="#tab-1">
+                                    <div class="works-tabs__controls-order">1</div>
+                                    <div class="works-tabs__controls-name">Configure bot</div></a><a class="works-tabs__controls-item" href="#tab-2">
+                                    <div class="works-tabs__controls-order">2</div>
+                                    <div class="works-tabs__controls-name">Create task</div></a><a class="works-tabs__controls-item" href="#tab-3">
+                                    <div class="works-tabs__controls-order">3</div>
+                                    <div class="works-tabs__controls-name">Analyze results</div></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="integr-container js-waypoint">
+                <div class="integr-container__inner">
+                    <h4 class="integr-container__title">Integrations</h4>
+                    <ul class="integr-list">
+                        <li><a class="integr-step__item" href="#">
+                                <div class="integr-step__img"><img src="img/logo/logo-microsoft.svg" alt=""></div>
+                                <div class="integr-step__title">Microsoft bot framework</div>
+                                <div class="integr-step__text">
+                                    Build an intelligent chatbot for teams.
+                                    Launch immediately with our one click integration
+                                    or host it on your own server.
+                                </div>
+                                <div class="integr-step__url">dev.botframework.com</div></a></li>
+                        <li><a class="integr-step__item" href="#">
+                                <div class="integr-step__img"><img src="img/logo/logo-api.svg" alt=""></div>
+                                <div class="integr-step__title">Api</div>
+                                <div class="integr-step__text">
+                                    Design Conversation Actions for the Google Assistant.
+                                    Then, easily deploy them on Google Home as “Conversation Actions.”
+                                </div>
+                                <div class="integr-step__url">api.ai</div></a></li>
+                        <li><a class="integr-step__item" href="#">
+                                <div class="integr-step__img"><img src="img/logo/logo-wit.svg" alt=""></div>
+                                <div class="integr-step__title">Wit</div>
+                                <div class="integr-step__text">
+                                    Build a conversational bot for Facebook users. D
+                                    eploy with our one-click integration or host it on your own server.
+                                </div>
+                                <div class="integr-step__url">wit.ai</div></a></li>
+                        <li><a class="integr-step__item" href="#">
+                                <div class="integr-step__img"><img src="img/logo/logo-smooch.svg" alt=""></div>
+                                <div class="integr-step__title">Smooch</div>
+                                <div class="integr-step__text">
+                                    Build an intelligent chatbot for teams. Launch immediately with our
+                                    one click integration or host it on your own server.
+                                </div>
+                                <div class="integr-step__url">smooch.io</div></a></li>
+                    </ul><a class="btn btn-blue" href="#">all integrations</a>
+                </div>
+            </div>
+            <div class="devs-container">
+                <div class="devs-container__inner">
+                    <h4 class="devs-container__title">Developers first</h4>
+                    <div class="devs-container__text">
+                        Avoid the steep learning curve and quickly add B2C messaging to your app by
+                        combining our simple API modules built for scale and high-availability.
+                    </div>
+                    <div class="devs-container__img-wrap"><img src="img/developers-first.png" alt="" width="1013" height="1097"></div>
+                </div>
+            </div>
+            <div class="pricing-container" id="pricing">
+                <div class="pricing-container__inner">
+                    <h4 class="pricing-container__title">Pricing</h4>
+                    <div class="pricing-container__text">
+                        You defining the rewards for testers only. We keep things simple — there’s no coding required, <br />
+                        and you can build a bot without cost getting in the way.
+                    </div>
+                    <div class="pricing-container__start">
+                        <h4 class="pricing-container__start-title">Let's get started!</h4>
+                        <div class="pricing-container__link"><a class="btn btn-blue" href="#">create account</a><a class="btn btn-white" href="#">contact us</a></div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-inner">
+                    <div class="footer-logo"><a class="footer-logo__link" href="#">MAKE GREAT<span>.ai</span></a></div>
+                    <div class="footer__menu">
+                        <div class="footer__menu__item">
+                            <h4 class="footer__menu-title">product</h4>
+                            <ul class="footer__menu-list">
+                                <li><a class="footer__menu-link js-anchor" href="#features"> Features</a></li>
+                                <li><a class="footer__menu-link js-anchor" href="#works"> How it works</a></li>
+                                <li><a class="footer__menu-link js-anchor" href="#pricing"> Pricing</a></li>
+                                <li><a class="footer__menu-link" href="#">Contact sales</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu__item">
+                            <h4 class="footer__menu-title">developers</h4>
+                            <ul class="footer__menu-list">
+                                <li><a class="footer__menu-link" href="#">Documentaion</a></li>
+                                <li><a class="footer__menu-link" href="#">Quick start</a></li>
+                                <li><a class="footer__menu-link" href="#">API reference</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__menu__item">
+                            <h4 class="footer__menu-title">company</h4>
+                            <ul class="footer__menu-list">
+                                <li><a class="footer__menu-link" href="#">About</a></li>
+                                <li><a class="footer__menu-link" href="#">Jobs</a></li>
+                                <li><a class="footer__menu-link" href="#">Become a partner</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <ul class="social-list">
+                            <li><a class="social-icon fa fa-twitter fa-2x" href="#"></a></li>
+                            <li><a class="social-icon fa fa-github fa-2x" href="#"></a></li>
+                            <li><a class="social-icon fa fa-facebook-official fa-2x" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/vendor/jquery-3.1.0.min.js"></script>
+        <script src="js/vendor/jquery.waypoints.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
