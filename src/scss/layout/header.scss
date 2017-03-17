@@ -17,11 +17,12 @@ header{
     margin: 0 auto;
     padding: 0 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .header-logo{
+    margin-right: auto;
     font-size: 22px;
     font-weight: 600;
     color: #fff;
@@ -29,6 +30,11 @@ header{
         font-size: 18px;
     }
 }
+
+.header-auth{
+    margin-left: 100px;
+}
+
 .header__auth-signin,
 .header__auth-signup{
     display: inline-block;
@@ -60,7 +66,7 @@ header{
 
 //------nav
 .nav{
-    margin: 0 0 0 250px;
+    margin: 0;
     padding: 0;
     list-style: none;
     li{
